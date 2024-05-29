@@ -13,7 +13,7 @@
 </header>
 
 
-  @yeld('content')
+  @yield('content')
 
 
 <footer>
