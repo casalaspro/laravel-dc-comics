@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Comic;
+
 
 class ComicSeeder extends Seeder
 {
@@ -226,14 +228,17 @@ class ComicSeeder extends Seeder
             ],
         ];
 
-        DB::table('weapons')->truncate();
+        // DB::table('weapons')->truncate();
 
         foreach($data as $row){
             $new_comic = new Comic();
             $new_comic->title = $row['title'];
-            $new_comic->decription = $row['decription'];
+            $new_comic->decription = $row['description'];
             $new_comic->thumb = $row['thumb'];
-            $new_comic->price = $row['price'];
+
+
+            $new_comic->price = 
+            floatval(ltrim($row['price'],"$"));
             $new_comic->series = $row['series'];
             $new_comic->sale_date = $row['sale_date'];
             $new_comic->type = $row['type'];
