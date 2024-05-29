@@ -1,1 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+.card-comic{
+  height: 100%;
+  .comic-cover{
+    object-fit: cover;
+    height: 329px;
+  }
+}
