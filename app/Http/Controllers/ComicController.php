@@ -41,5 +41,20 @@ class ComicController extends Controller
         $new_comic->save();
 
         return redirect()->route('comics.show', $new_comic);
+
+    }
+
+    public function edit(Comic $comic){
+        return view('comics.edit', compact('comic'));
+    }
+
+    public function update(Request $request, Comic $comic){
+        $form_data = $request->all();
+        $comic->fill($form_data);
+        $comic->save();
+
+        // another option is to use just umpdate that fills and saves
+        // $comic->update($form_data);
+        return to_route('comics.show', $comic);
     }
 }

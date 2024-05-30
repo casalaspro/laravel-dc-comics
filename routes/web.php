@@ -22,11 +22,19 @@ Route::get('/', function () {
 // index
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
-// show
-Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
-
 // create
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 
+// show
+Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+
+
+
 // store
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+
+// edit
+Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
+
+// update
+Route::put('/comics/{comic}', [ComicController::class, 'update'])->name('comics.update');

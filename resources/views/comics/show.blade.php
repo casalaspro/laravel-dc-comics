@@ -11,6 +11,7 @@
       <p><strong>Writers: </strong>{{ $comic->writers }}</p>
       <p class="card-text">{{ $comic->decription }}</p>
       <h4>${{$comic->price}}</h4>
+      <a href="{{ route('comics.edit', $comic) }}">Edit</a>
       <a href="#" class="btn btn-primary">Buy</a>
     </div>
   </div>
