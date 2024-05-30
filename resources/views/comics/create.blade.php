@@ -16,32 +16,42 @@
 
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
-          <input type="email" name="title" class="form-control" id="title" placeholder="Titolo della pasta">
+          <input type="text" name="title" class="form-control" id="title" placeholder="Title">
         </div>
 
         <div class="mb-3">
           <label for="image" class="form-label">Url Image</label>
-          <input type="email" name="image" class="form-control" id="image" placeholder="http://...">
+          <input type="text" name="image" class="form-control" id="image" placeholder="http://...">
+        </div>
+
+        <div class="mb-3">
+          <label for="date">Sale Date</label>
+          <input type="date" id="date" name="sale_date" value="" min="1890-01-01" max="" />
+        </div>
+
+        <div class="mb-3">
+          <label for="series" class="form-label">Series</label>
+          <input type="text" name="series" class="form-control" id="series" placeholder="http://...">
         </div>
 
         <div class="mb-3">
           <label for="type" class="form-label">Type</label>
-          <input type="email" name="type" class="form-control" id="type" placeholder="lunga">
+          <input type="text" name="type" class="form-control" id="type" placeholder="...">
         </div>
 
         <div class="mb-3">
-          <label for="cooking_time" class="form-label">Artists</label>
-          <input type="email" name="cooking_time" class="form-control" id="cooking_time" placeholder="Artists names">
+          <label for="artists" class="form-label">Artists</label>
+          <input type="text" name="artists" class="form-control" id="artists" placeholder="Artists names">
         </div>
 
         <div class="mb-3">
-          <label for="cooking_time" class="form-label">Price</label>
-          <input type="email" name="cooking_time" class="form-control" id="cooking_time" placeholder="price in $">
+          <label for="price" class="form-label">Price</label>
+          <input type="text" name="price" class="form-control" id="price" placeholder="price in $">
         </div>
 
         <div class="mb-3">
           <label for="weigth" class="form-label">Writers</label>
-          <input type="email" name="weigth" class="form-control" id="weigth" placeholder="Writers names">
+          <input type="text" name="weigth" class="form-control" id="weigth" placeholder="Writers names">
         </div>
 
         <div class="mb-3">

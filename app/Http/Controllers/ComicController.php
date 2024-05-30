@@ -23,4 +23,12 @@ class ComicController extends Controller
 
         return view('comics.create');
     }
+
+    public function store(Request $request){
+        $form_data = $request->all();
+
+        // dd($form_data);
+        $new_comic = new Comic();
+        $new_comic->title = $form_data['title'];
+    }
 }
