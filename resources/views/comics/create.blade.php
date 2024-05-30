@@ -20,8 +20,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="image" class="form-label">Url Image</label>
-          <input type="text" name="image" class="form-control" id="image" placeholder="http://...">
+          <label for="thumb" class="form-label">Url Image</label>
+          <input type="text" name="thumb" class="form-control" id="thumb" placeholder="http://...">
         </div>
 
         <div class="mb-3">
@@ -50,8 +50,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="weigth" class="form-label">Writers</label>
-          <input type="text" name="weigth" class="form-control" id="weigth" placeholder="Writers names">
+          <label for="writers" class="form-label">Writers</label>
+          <input type="text" name="writers" class="form-control" id="writers" placeholder="Writers names">
         </div>
 
         <div class="mb-3">
