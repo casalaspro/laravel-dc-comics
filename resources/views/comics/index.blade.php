@@ -14,6 +14,11 @@
             <h5 class="card-title">{{ $comic->title }}</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="{{ route('comics.edit', $comic) }}">Edit</a>
+            <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="btn btn-link link-danger">Delete</button>
+            </form>
             <a href="{{ route('comics.show', $comic ) }}" class="btn btn-primary">More Infos</a>
           </div>
         </div>
